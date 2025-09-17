@@ -1,6 +1,11 @@
 #!/usr/bin/python3
-
+"""
+Si
+"""
 class Square:
+    """
+    Si
+    """
     __size = 0
 
     def __init__(self, size = 0):
@@ -12,3 +17,4 @@ class Square:
     
     def area(self):
         return(pow(self.__size,2))
+    
