@@ -14,11 +14,11 @@ class Square:
         if size < 0:
             raise (ValueError("size must be >= 0"))
         return True
-    
+
     @property
     def size(self):
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         if (self.validate(value)):
@@ -34,8 +34,8 @@ class Square:
     def my_print(self):
         if self.size == 0:
             print()
-            return()
-        for i in range (0, self.size):
-            for y in range (0, self.size):
+            return ()
+        for i in range(0, self.size):
+            for y in range(0, self.size):
                 print("#", end="")
-            print()      
+            print()
