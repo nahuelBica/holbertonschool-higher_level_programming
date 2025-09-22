@@ -22,11 +22,11 @@ class Rectangle:
             self.__width = width
         if self.validate_size(height, "height"):
             self.__height = height
-        self.number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     def __del__(self):
         print("Bye rectangle...")
-        self.number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
         return
 
     def __str__(self):
