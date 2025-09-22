@@ -9,11 +9,11 @@ class Rectangle:
     Class will be a rectangle
     """
 
-    def validate_size(self, value, type):
+    def validate_size(self, value, axis):
         if type(value) is not int:
-            raise (TypeError("{type} must be an integer"))
+            raise (TypeError(f"{axis} must be an integer"))
         if value < 0:
-            raise (ValueError("{type} must be >= 0"))
+            raise (ValueError(f"{axis} must be >= 0"))
         return True
 
     def __init__(self, width=0, height=0):
