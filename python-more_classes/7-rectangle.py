@@ -9,7 +9,7 @@ class Rectangle:
     Class will be a rectangle
     """
     number_of_instances = 0
-    print_symbol = "#" ## symbol used to represent rectangle in str
+    print_symbol = "#"
 
     def validate_size(self, value, axis):
         if type(value) is not int:
@@ -33,7 +33,8 @@ class Rectangle:
     def __str__(self):
         if (self.__width == 0 or self.__height == 0):
             return ""
-        return "\n".join([f"{self.print_symbol}" * self.__width for i in range(self.__height)])
+        return "\n".join([f"{self.print_symbol}" * self.__width
+                          for i in range(self.__height)])
 
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.__height})"
