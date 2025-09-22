@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module creates a class rectangle 
+Module creates a class rectangle
 """
 
 
