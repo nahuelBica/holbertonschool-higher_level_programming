@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+"""
+Function used to check if an object is a subclass of a class
+"""
+
+
+def inherits_form(obj, a_class):
+    """
+    Function used to check if an object is a subclass of a class
+    """
+    return issubclass(obj, a_class)
