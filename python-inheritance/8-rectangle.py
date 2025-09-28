@@ -4,6 +4,7 @@ Module creates a class Rectangle
 """
 Bg = __import__("7-base_geometry").BaseGeometry
 
+
 class Rectangle(Bg):
     """
     Class will be a Rectangle
@@ -13,5 +14,4 @@ class Rectangle(Bg):
         self.integer_validator("height", height)
         self.__width = width
         self.__height = height
-
-
+        
