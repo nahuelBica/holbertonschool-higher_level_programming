@@ -4,7 +4,7 @@ Function used to check if an object is a subclass of a class
 """
 
 
-def inherits_form(obj, a_class):
+def inherits_from(obj, a_class):
     """
     Function used to check if an object is a subclass of a class
     """
