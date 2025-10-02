@@ -2,7 +2,7 @@
 """
 Module creates a class Square
 """
-Rg = __import__("9-rectangle.py").Rectangle
+Rg = __import__("9-rectangle").Rectangle
 
 
 class Square(Rg):
