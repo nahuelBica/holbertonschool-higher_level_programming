@@ -14,4 +14,4 @@ class Square(Rg):
         super().__init__(size, size)
 
     def __str__(self):
-        return ("[Square] {}/{}".format(self._Rg__width, self._Rg__height))
+        return  f"[Square] {self._Rg__width:d}/{self._Rg__height:d}"
