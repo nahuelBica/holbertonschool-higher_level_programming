@@ -10,8 +10,5 @@ class Square(Rg):
     Class will be a Square
     """
     def __init__(self, size):
-        super.integer_validator("size", size)
-        self.__size = size
-
-    def area(self):
-        return pow(self.__size, 2)
+        self.integer_validator("size", size)
+        super().__init__(size, size)
