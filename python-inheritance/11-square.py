@@ -15,4 +15,4 @@ class Square(Rg):
         self.__size = size
 
     def __str__(self):
-        return  f"[Square] {self.__size:d}/{self.__size:d}"
+        return f"[Square] {self.__size:d}/{self.__size:d}"
