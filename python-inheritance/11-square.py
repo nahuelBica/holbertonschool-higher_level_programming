@@ -12,6 +12,7 @@ class Square(Rg):
     def __init__(self, size):
         self.integer_validator("size", size)
         super().__init__(size, size)
+        self.__size = size
 
     def __str__(self):
-        return  f"[Square] {super().__width:d}/{super().__height:d}"
+        return  f"[Square] {self.__size:d}/{self.__size:d}"
