@@ -2,6 +2,7 @@
 
 """Read file"""
 
+
 def read_file(filename=""):
     """Read a file utf-8"""
 
