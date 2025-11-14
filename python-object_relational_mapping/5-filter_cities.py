@@ -17,10 +17,10 @@ if __name__ == "__main__":
     query = "SELECT c.name FROM cities AS c JOIN states AS s ON c.state_id = s.id WHERE s.name LIKE BINARY %s ORDER BY c.id ASC;"
     cur = conn.cursor()
     cur.execute(query, (state,))
+
     query_rows = cur.fetchall()
-    cities = ()
-    for row in query_rows:
-        cities += (row[0])
+    
+    cities = [row[0] for row in query_rows]
     print(",".join(cities))
     cur.close()
     conn.close()
