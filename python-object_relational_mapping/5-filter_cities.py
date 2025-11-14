@@ -20,6 +20,6 @@ if __name__ == "__main__":
     query_rows = cur.fetchall()
     for row in query_rows:
         cities += (row[0])
-        print(",".join(cities))
+    print(",".join(cities))
     cur.close()
     conn.close()
