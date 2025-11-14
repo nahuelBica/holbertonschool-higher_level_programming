@@ -14,7 +14,8 @@ if __name__ == "__main__":
                            db=av[2],
                            charset="utf8")
     state = av[3]
-    query = "SELECT c.name FROM cities AS c JOIN states AS s ON c.state_id = s.id WHERE s.name LIKE BINARY %s ORDER BY c.id ASC;"
+    query = "SELECT c.name FROM cities AS c JOIN states AS s " \
+        "ON c.state_id = s.id WHERE s.name LIKE BINARY %s ORDER BY c.id ASC;"
     cur = conn.cursor()
     cur.execute(query, (state,))
 
