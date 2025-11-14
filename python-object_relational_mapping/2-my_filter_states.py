@@ -15,7 +15,7 @@ if __name__ == "__main__":
                            charset="utf8")
     cur = conn.cursor()
     cur.execute("SELECT * FROM states WHERE name = '{}'"
-                "ORDER BY id ASC;").format(av[3])
+                "ORDER BY id ASC;".format(av[3]))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
