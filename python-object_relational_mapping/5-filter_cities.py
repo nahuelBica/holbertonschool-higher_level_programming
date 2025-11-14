@@ -19,8 +19,8 @@ if __name__ == "__main__":
     cur.execute(query, (state,))
 
     query_rows = cur.fetchall()
-    
+
     cities = [row[0] for row in query_rows]
-    print(",".join(cities))
+    print(", ".join(cities))
     cur.close()
     conn.close()
