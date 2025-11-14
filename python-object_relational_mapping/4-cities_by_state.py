@@ -13,7 +13,7 @@ if __name__ == "__main__":
                            passwd=av[1],
                            db=av[2],
                            charset="utf8")
-    query = "SELECT c.id, c.name, s.name FROM cities AS c "
+    query = "SELECT c.id, c.name FROM cities AS c "
     "JOIN states AS s ON c.state_id = s.id ORDER BY c.id ASC"
     cur = conn.cursor()
     cur.execute(query)
