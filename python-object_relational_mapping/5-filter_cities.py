@@ -19,6 +19,6 @@ if __name__ == "__main__":
     cur.execute(query, (state,))
     query_rows = cur.fetchall()
     for row in query_rows:
-        print(row)
+        print(",".join(row[0]))
     cur.close()
     conn.close()
