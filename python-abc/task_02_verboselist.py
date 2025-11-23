@@ -7,9 +7,9 @@ class VerboseList(list):
         print('Added {} to the list.'.format(item))
 
     def extend(self, iterable):
-        len = len(self)
+        lenght = len(self)
         super().extend(iterable)
-        it_added = len(self) - len
+        it_added = len(self) - lenght
         print("Extended the list with {} items.".format(it_added))
 
     def remove(self, value):
