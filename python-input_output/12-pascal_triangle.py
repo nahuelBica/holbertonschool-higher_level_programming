@@ -5,7 +5,9 @@ Generates pascal triangle with n lines
 
 
 def pascal_triangle(n):
-    
+    """
+    Generates pascal triangle with n lines
+    """
     if n <= 0:
         return []
 
