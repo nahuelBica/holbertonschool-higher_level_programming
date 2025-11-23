@@ -22,8 +22,6 @@ class Circle(Shape):
     Subclass Circle
     """
     def __init__(self, radius):
-        if (radius is not float or radius < 0):
-            raise Exception ("El radio debe ser un número positivo")
         self.__radius = radius
 
     def area(self):
