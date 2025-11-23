@@ -16,10 +16,10 @@ class VerboseList(list):
         super().remove(value)
         print("Removed {} from the list.".format(value))
 
-    def pop(self, idx = -1):
+    def pop(self, index = -1):
         try:
-            it = self[idx]
+            it = self[index]
         except IndexError:
             raise
-        super().pop(idx)
+        super().pop(index)
         print("Popped {} from the list.".format(it))
