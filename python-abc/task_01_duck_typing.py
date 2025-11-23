@@ -28,3 +28,19 @@ class Circle(Shape):
 
     def area(self):
         return ((2 * 3.14) * self.__radius)
+
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.__width = width
+        self.__height = height
+
+    def area(self):
+        return self.__width * self.__height
+
+    def perimeter(self):
+        return abs((self.__width + self.__height) * 2)
+
+
+def shape_info(any_shape):
+    print(f"Area: {any_shape.area()}")
+    print(f"Perimeter: {any_shape.perimeter()}")
