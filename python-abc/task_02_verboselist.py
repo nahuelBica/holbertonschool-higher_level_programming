@@ -21,5 +21,5 @@ class VerboseList(list):
             it = self[index]
         except IndexError:
             raise
-        super().pop(index)
         print("Popped {} from the list.".format(it))
+        return super().pop(index)
